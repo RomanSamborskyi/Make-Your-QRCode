@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6B7F441E27B91F390015EA1C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F441D27B91F390015EA1C /* TabBar.swift */; };
+		6BAD5BE027CB6D4200A12D22 /* QRGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD5BDF27CB6D4200A12D22 /* QRGallery.swift */; };
+		6BAD5BE227CB720A00A12D22 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD5BE127CB720A00A12D22 /* SettingsView.swift */; };
 		6BAF8CB927A26A8C002B3113 /* Make_Your_QRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAF8CB827A26A8C002B3113 /* Make_Your_QRApp.swift */; };
 		6BAF8CBB27A26A8C002B3113 /* QRGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAF8CBA27A26A8C002B3113 /* QRGeneration.swift */; };
 		6BAF8CBD27A26A8C002B3113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF8CBC27A26A8C002B3113 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* Begin PBXFileReference section */
 		6B64C91827A2F65C0044EDCA /* Make-Your-QR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Make-Your-QR-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6B7F441D27B91F390015EA1C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		6BAD5BDF27CB6D4200A12D22 /* QRGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGallery.swift; sourceTree = "<group>"; };
+		6BAD5BE127CB720A00A12D22 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		6BAF8CB527A26A8C002B3113 /* Make Your QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Make Your QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BAF8CB827A26A8C002B3113 /* Make_Your_QRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Make_Your_QRApp.swift; sourceTree = "<group>"; };
 		6BAF8CBA27A26A8C002B3113 /* QRGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneration.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				6B64C91827A2F65C0044EDCA /* Make-Your-QR-Info.plist */,
 				6BAF8CB827A26A8C002B3113 /* Make_Your_QRApp.swift */,
+				6BAD5BE127CB720A00A12D22 /* SettingsView.swift */,
+				6BAD5BDF27CB6D4200A12D22 /* QRGallery.swift */,
 				6B7F441D27B91F390015EA1C /* TabBar.swift */,
 				6BAF8CBA27A26A8C002B3113 /* QRGeneration.swift */,
 				6BAF8CBC27A26A8C002B3113 /* Assets.xcassets */,
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BAD5BE227CB720A00A12D22 /* SettingsView.swift in Sources */,
 				6B7F441E27B91F390015EA1C /* TabBar.swift in Sources */,
+				6BAD5BE027CB6D4200A12D22 /* QRGallery.swift in Sources */,
 				6BAF8CBB27A26A8C002B3113 /* QRGeneration.swift in Sources */,
 				6BAF8CB927A26A8C002B3113 /* Make_Your_QRApp.swift in Sources */,
 			);

@@ -22,7 +22,12 @@ struct TabBar: View {
                    
                 ContentView()
                 }
-           
+                    else if self.index == 0 {
+                        QRGallery()
+                    }
+                    else if self.index == 2{
+                        SettingsView()
+                    }
                 }
                 CustomBar(indexx: self.$index)
             }
@@ -43,33 +48,36 @@ struct CustomBar : View {
     
     var body: some View {
         HStack{
+            Spacer()
             Button(action:{
                 self.indexx = 0
     
                     }) {
-                Image("HomePng")
+                Image("GalleryPng")
                             .padding()
-                            .frame(width: 64.0, height: 64.0)
+                            .frame(width: 48.0, height: 48.0)
                             
             }
-            
+                    Spacer()
             Button(action:{
                 self.indexx = 1
                     }) {
                         Image("QRpng")
                             .padding()
-                            .frame(width: 64.0, height: 64.0)
+                            .frame(width: 48.0, height: 48.0)
             }
             
+                     Spacer()
             
             Button(action:{
                 self.indexx = 2
                     }) {
                         Image("SettingsPng")
                             .padding()
-                            .frame(width: 64.0, height: 64.0)
+                            .frame(width: 48.0, height: 48.0)
                            
         }
+            Spacer()
     }
   }
 }
