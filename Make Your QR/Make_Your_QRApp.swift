@@ -12,6 +12,7 @@ struct Make_Your_QRApp: App {
     var body: some Scene {
         WindowGroup {
             TabBar()
+            
         }
     }
 }
