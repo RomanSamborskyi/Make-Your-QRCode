@@ -24,6 +24,7 @@ struct TabBar: View {
                 }
                     else if self.index == 0 {
                         QRGallery()
+                            
                     }
                     else if self.index == 2{
                         SettingsView()
@@ -48,35 +49,43 @@ struct CustomBar : View {
     
     var body: some View {
         HStack{
-            Spacer()
-            Button(action:{
-                self.indexx = 0
-    
-                    }) {
-                Image("GalleryPng")
-                            .padding()
-                            .frame(width: 48.0, height: 48.0)
-                            
-            }
+               Spacer()
+            Button{
+                withAnimation {
+                    self.indexx = 0
+                }
+            }label: {
+                    Image(systemName: "house.fill")
+                    .labelStyle(.iconOnly)
+                    .imageScale(.large)
+                     .scaleEffect(1.5)
+                
+            }.padding()
+                
                     Spacer()
-            Button(action:{
-                self.indexx = 1
-                    }) {
-                        Image("QRpng")
-                            .padding()
-                            .frame(width: 48.0, height: 48.0)
-            }
-            
+            Button{
+                withAnimation {
+                    self.indexx = 1
+                }
+                }label:{
+                   Image(systemName: "qrcode")
+                        .labelStyle(.iconOnly)
+                        .imageScale(.large)
+                         .scaleEffect(1.5)
+                        
+                }.padding()
                      Spacer()
             
-            Button(action:{
-                self.indexx = 2
-                    }) {
-                        Image("SettingsPng")
-                            .padding()
-                            .frame(width: 48.0, height: 48.0)
-                           
-        }
+            Button{
+                withAnimation {
+                    self.indexx = 2
+                }
+            }label: {
+                Image(systemName:"gearshape")
+                    .labelStyle(.iconOnly)
+                    .imageScale(.large)
+                    .scaleEffect(1.5)
+            }.padding()
             Spacer()
     }
   }
